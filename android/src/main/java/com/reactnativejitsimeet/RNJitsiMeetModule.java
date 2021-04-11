@@ -36,6 +36,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
             public void run() {
+//                if(mJitsiMeetViewReference.getJitsiMeetView() == null) {
+//                    call(url, userInfo);
+//                }
                 if (mJitsiMeetViewReference.getJitsiMeetView() != null) {
                     RNJitsiMeetUserInfo _userInfo = new RNJitsiMeetUserInfo();
                     if (userInfo != null) {
@@ -69,6 +72,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
         UiThreadUtil.runOnUiThread(new Runnable() {
             @Override
             public void run() {
+//                if(mJitsiMeetViewReference.getJitsiMeetView() == null) {
+//                    audioCall(url, userInfo);
+//                }
                 if (mJitsiMeetViewReference.getJitsiMeetView() != null) {
                     RNJitsiMeetUserInfo _userInfo = new RNJitsiMeetUserInfo();
                     if (userInfo != null) {
